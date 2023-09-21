@@ -1,0 +1,425 @@
+/* typography and text6 color and styles */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* Using font Raleway for headings and head lines and using font work sans for the paras */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway";
+  color: white;
+  
+  
+}
+p {
+  font-family: "Work Sans";
+  
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Work sans";
+    color: white;
+    list-style: none;
+}
+/* the main colour used will be #E81828 for main accents and highlights areas for secondary accents and highlights this color #8C8C8C 
+and also black and white for other regions */
+
+/*  making some default containers */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grid {
+  display: grid;
+  place-content: center;
+}
+.main-container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+ 
+    
+}
+.main-container-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.main-container-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+/* classes for padding and margins */
+.p-s {
+  padding: 5px;
+}
+.p-m {
+  padding: 10px;
+}
+.p-l {
+  padding: 15px;
+}
+.p-x {
+  padding: 20px;
+}
+.p-xl {
+  padding: 25px;
+}
+.p-xxl {
+  padding: 35px;
+}
+
+.m-s {
+  margin: 5px;
+}
+.m-b{
+  margin-bottom: 35px;
+}
+.m-m {
+  margin: 10px;
+}
+.m-l {
+  margin: 15px;
+}
+.m-x {
+  margin: 20px;
+}
+.m-xl {
+  margin: 25px;
+}
+.m-xxl {
+  margin: 35px;
+}
+/* ......................................................... */
+/* classes for background colours */
+.bg-red{
+    background-color: #E81828 ;
+}
+.bg-grey{
+   background-color: #8C8C8C ;
+}
+/* header and navigation bar styles */
+header{
+    height: 14vh;
+    z-index: 999;
+}
+.nav-bar{
+    max-width: 100vw;
+}
+.name-container{
+    max-width: 100vw;
+}
+header ul li{
+    list-style: none;
+    display: inline;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+header ul li:hover{
+    color: #E81828;
+    text-decoration: underline;
+    transition: 0.5s ease;
+}
+
+
+.color-red{
+    color:crimson;
+}
+.name{
+    font-size: 20px;
+}
+.name-red{
+    color:crimson;
+    font-size: 28px;
+    font-weight: bold;
+}
+.bg-black{
+    background-color: black;
+}
+.sub-list{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    border-radius: 4px;
+
+}
+.sub-list li{
+    list-style: none;
+}
+/* landing page */
+.main-bg-img{
+    background-image: url('josh-nuttall-uNQ-TTg_qNY-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.heading-stroke{
+    -webkit-text-stroke: 5px white;
+    color: transparent;
+    font-size: 180px;
+    font-weight: 1000;
+    font-family: "Raleway";
+    
+}
+   
+.heading-normal{
+    color:crimson;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 64px;
+}
+.primary-btn-color{
+    width: 175px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 5px;
+   
+}
+.border-red{
+    border: 1px solid crimson;
+}
+.border-grey{
+    border: 1px solid #8C8C8C;
+}
+.logo-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+/* branding page  */
+.brand-img{
+    width: 520px;
+    height: 470px;
+    border-radius: 5px;
+}
+.flex-left-para{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 650px;
+    height: auto;
+}
+.flex-right-para{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 650px;
+  height: auto;
+}
+.text-heading{
+    font-size: 28px;
+}
+.card-icon{
+    font-size: 52px;
+    color: white;
+}
+.gap-s{
+    gap: 10px;
+}
+.flex-center-card{
+    width: 300px;
+    height: auto;
+}
+.heading-sub{
+    width: 100vw;
+    font-size: 24px;
+}
+.card-icon:hover{
+    transform: scale(1.4);
+    color: crimson;
+    transition: 0.6s;
+}
+.border-radius-s{
+  border-radius: 10px;
+}
+.card-transition:hover {
+  background-color: crimson;
+  border: crimson;
+  margin: 40px;
+  margin-bottom: 80px;
+  transition: 0.8s ease;
+}
+
+.card-transition:hover i {
+  /* Apply a rotation transformation */
+  transform: rotate(360deg);
+  font-size: 60px;
+  color: cornflowerblue;
+  transition: transform 0.8s ease;
+}
+.brand-img-2{
+  width: 580px;
+  height: 460px;
+  border-radius: 8px;
+}
+.brand-img-grid{
+  width: 315px;
+  height: 220px;
+}
+.grid-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.img-transition {
+  /* Set the initial scale to 1 (normal size) */
+  transform: scale(1);
+  filter: brightness(1);
+  /* Add a smooth transition to create the zoom effect */
+  transition: transform 0.3s ease;
+}
+
+.img-transition:hover {
+  /* Increase the scale to make the element appear larger on hover */
+  transform: scale(1.06); /* Adjust the scale factor as needed */
+  filter: brightness(0.6);
+}
+
+.round-container{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 10px solid grey;
+
+}
+.round-container:hover{
+  border: 15px solid gold;
+  transform: scale(1.04);
+  filter: brightness(0.6);
+  transition: 0.2s ease-in-out;
+}
+
+.bg-img-round-1{
+  background-image: url('pexels-zakaria-boumliha-2827392.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.bg-img-round-2{
+  background-image: url('domino-164_6wVEHfI-unsplash.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.bg-img-round-3{
+  background-image: url('vd-photography-E3F5VL5EGWg-unsplash.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.bg-img-round-4{
+  background-image: url('diana-polekhina-ZSpkUThb7qk-unsplash.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.grid-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-content: center;
+}
+
+.heading-body{
+  font-size: 24px;
+}
+.sub-primary-btn{
+  width: 135px;
+  height: 35px;
+  border-radius: 6px;
+}
+.sub-primary-btn:hover{
+  background-color: #696969;
+  transform: scale(1.03);
+  transform: 0.2s ease-out;
+}
+.sub-primary-btn:active{
+  transform: translateX(4px) translateY(4px);
+  transition: 0.1s ease-out;
+
+}
+.count{
+  font-size: 64px;
+  font-weight: 700;
+  font-family:  "Anton";
+}
+/* creating a footer   */
+
+.footer-heading{
+  font-size: 34px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+footer ul li{
+  list-style: none;
+  font-size: 16px;
+}
+h5{
+  font-size: 22px;
+}
+.end-container{
+  max-width: 100vw;
+  min-width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.bg-dark-red{
+  background-color: rgb(200, 20, 56);
+}
+.footer-icon{
+  font-size: 22px;
+}
+.footer-icon:hover{
+  font-size: 26px;
+  color: crimson;
+  transition: 0.2s;
+}
+.footer-icon:active{
+  transform: translateX(2px) translateY(2px);
+}
+.footer{
+  height: 50vh;
+}
+.bg-dark-grey{
+  background-color: #1a1a1a;
+}
+
+.primary-btn-color:hover{
+  background-color: rgb(200, 20,56);
+  transition: 0.2s ease;
+}
+.primary-btn-color:active{
+  transform: translateX(6px) translateY(6px);
+  transition: 2ms ease;
+}
+.mesh-gradient{
+ background-color:rgb(31, 64, 104);
+}

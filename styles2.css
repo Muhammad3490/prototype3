@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@700&display=swap");
+.main-bg-img-dash {
+  background-image: url("jesse-orrico-tzded6Kf0R0-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.heading-stroke-dash {
+  -webkit-text-stroke: 1.5px white;
+  color: transparent;
+  font-size: 85px;
+  font-weight: 1000;
+  font-family: "Raleway";
+}
+.heading-normal-dash {
+  color: crimson;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 44px;
+}
+.heading-sub-s {
+  width: 100vw;
+  font-size: 18px;
+}
+.form-container-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  place-content: center;
+  width: 460px;
+  height: auto;
+  background-color: #1a1a1a;
+}
+.round-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-icon {
+  font-size: 40px;
+}
+.form-container-1 label {
+  min-width: 400px;
+  font-size: 20px;
+}
+.form-container-1 input {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container-1 select {
+  width: 280px;
+  color: white;
+  background-color: #1a1a1a;
+  border-radius: 0px;
+}
+.form-button {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+}
+.file {
+  width: 200px;
+  height: 30px;
+}
+.label-small {
+  font-size: 14px;
+}
+.pf-container {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 2.5px solid chartreuse;
+}
+.pf-container:hover {
+  filter: brightness(0.6);
+  transform: scale(1.06);
+  transition: 0.5s;
+  animation: pfAnimate 1s infinite ease;
+}
+@keyframes pfAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-40deg);
+  }
+  90% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.info-container:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.pf-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  display: flex;
+}
+.blue-bg {
+  background-color: #535353;
+}
+
+
+
+#dashboard {
+  display: none;
+}
+.info-container {
+  width: 230px;
+  height: 200px;
+  border-radius: 6px;
+  display: grid;
+  gap: 5px;
+  font-size: 18px;
+  font-family: 500;
+}
+.age-count {
+  font-size: 18px;
+
+}
+
+
+.notice-container {
+  width: 70vw;
+  height: 150px;
+  max-height: auto;
+  background-color:transparent;
+  font-size: 20px;
+  font-weight: normal;
+  
+}
+.large-text {
+  font-size: 65px;
+  font-family: "Space Grotesk";
+  color: rgb(252, 19, 65);
+  font-weight: bolder;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.heading1 {
+  font-size: 24px;
+}
+#form-2 {
+  display: flex;
+}
+.workout-form {
+  width: 350px;
+  min-height: 250px;
+  height: auto;
+}
+.workout-form input {
+  width: 280px;
+  height: 35px;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid #5b5b5b;
+}
+.workout-form input:focus{
+    outline: none;
+}
+.workout-form select {
+  width: 280px;
+  padding: 8px;
+}
+.workout-form label {
+  width: 280px;
+  font-size: 20px;
+}
+.hidden-button {
+  display: none;
+}
+.workout-card {
+  width: 70vw;
+  border-radius: 8px;
+  height: 130px;
+  max-height: auto;
+  border: 1px solid #4c4848;
+}
+.icon-container {
+  width: 150px;
+  height: 130px;
+  font-size: 28px;
+  max-height: auto;
+  border-left: 1px solid black;
+ border-bottom-left-radius: 8px;
+ border-top-left-radius: 8px;
+
+}
+.bg-lemon {
+  background-color: chartreuse;
+}
+.bg-purple {
+  background-color: purple;
+}
+.bg-powder-blue {
+  background-color: cornflowerblue;
+}
+.bg-coral {
+  background-color: coral;
+}
+.bg-cyan {
+  background-color: darkcyan;
+}
+.bg-violet {
+  background-color: palevioletred;
+}
+.w-icon {
+  width: 80px;
+  height: 80px;
+}
+.heading2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.icon {
+  place-self: right;
+}
+.detail {
+  width: 60vw;
+  gap: 8px;
+  height: auto;
+  display: none;
+  padding: 30px;
+  border: 1px solid #4c4848;
+  border-radius: 8px;
+}
+/* Remove default borders and apply a bottom border to the select input */
+select {
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid #5b5b5b; /* Apply a bottom border with your desired color */
+    background: #1a1a1a; /* Optional: Make the background transparent */
+}
+select:focus{
+    outline: none;
+}
+input{
+    border: none;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #5b5b5b;
+}
+input:focus{
+    outline: none;
+    transform: scale(1.08);
+    transform: translateY(-2px);
+    transition: 0.5s ease;
+}
+.workout-card:hover{
+    transform: scale(1.05);
+    background-color: #696969;
+    transition: 0.5s ;
+  }
+  body{
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .btn-container{
+    width: 100vw;
+    height: auto;
+  }

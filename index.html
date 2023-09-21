@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveSync-Your workout partener</title>
+    <link rel="shortcut icon" href="ideogram (11).jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="sizing.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Discover the ultimate workout planning solution with ActiveSync! Our cutting-edge web app empowers you to take control of your fitness journey. Create customized workout routines, track progress, and sync seamlessly with your fitness devices. Get ready to optimize your workouts and achieve your fitness goals like never before with ActiveSync." />
+</head>
+
+<body>
+    <header>
+        <div class="flex-center bg-black">
+            <div class="heading-sub flex-center p-xl">
+                <p class="name-red">ActiveSync </p>
+                <img src="ideogram (11).jpeg" alt="" class="logo-img">
+            </div>
+        </div>
+        <nav>
+            <ul class="flex-center p-l bg-black nav-bar">
+                <li class="nav-list m-m">Get started</li>
+                <li class="nav-list m-m">Dashboard</li>
+                <li class="nav-list m-m" id="About">Workouts <i class="fa-solid fa-caret-down"></i>
+                    <ul class="sub-list m-s p-l bg-grey">
+                        <li class="m-x">Your workout</li>
+                        <li class="m-x">Start a new workout</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="main-container-center main-bg-img-dash">
+        <div class="flex-left">
+            <div class="grid">
+                <div class="flex-center">
+                    <p class="heading-stroke-dash">Get Started</p>
+                </div>
+                <div class="flex-center">
+                    <p class="heading-normal-dash">with ActiveSync</p>
+                </div>
+                <div class="flex-center p-m">
+                    <button class="primary-btn-color bg-red border-red">Visit ActiveSync</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container-center bg-dark-grey" id="container-1">
+        <div class="flex-center">
+            <div class="heading-sub flex-center p-m">
+                <p>Get Started</p>
+            </div>
+            <div class="heading-sub-s flex-center p-m">
+                <p>Start by sharing your personal information.</p>
+            </div>
+        </div>
+
+        <div class="flex-center m-l">
+            <div class="bg-dark-grey form-container-1">
+                <form action="" id="myForm1">
+                    <div class="flex-center m-m">
+                        <div class="round-icon bg-dark-red">
+                            <i class="fa-solid fa-user form-icon"></i>
+                        </div>
+
+                    </div>
+                    <div class="flex-center m-s">Your information</div>
+                    <form action="">
+                        <div class="flex-center m-m">
+                            <label for="user-name" class="m-m">Name :</label>
+                            <input type="text" name="" id="user-name">
+                        </div>
+                        <div class="flex-center m-m">
+                            <label for="user-age" class="m-m">Age :</label>
+                            <input type="text" name="" id="user-age">
+                        </div>
+
+                        <div class="flex-center">
+                            <label for="photoInput" class="m-m label-small">Choose a Profile Pic</label>
+                            <input type="file" id="photoInput" accept="image/*" class="file">
+
+                        </div>
+                        <div class="flex-center m-m p-x">
+                            <label for="user-gender" class="m-m">Select your gender :</label>
+                            <select name="" id="user-gender" class="p-m m-s">
+                                <option value="M" class="p-m">Male</option>
+                                <option value="F" class="p-m">Female</option>
+                            </select>
+                        </div>
+
+
+
+
+                        <div class="flex-center m-s">
+                            <button type="button" class="form-button flex-center m-s border-red bg-red"
+                                id="submit-1">Submit</button>
+
+                        </div>
+
+
+
+
+                    </form>
+            </div>
+
+
+        </div>
+
+    </div>
+    </div>
+</div>
+
+       
+    
+    <div class="flex-left bg-dark-grey p-xl" id="dashboard">
+        <div class="flex-left p-xl m-xl">
+            <div class="heading-sub flex-left p-s">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="heading-sub flex-left p-xl" id="name-display">
+                <div class="pfp pf-container flex-center" id="profile"></div>
+            </div>
+        </div>
+        <div class="flex-center" id="grid">
+
+                <div class="flex-left m-l" id="info"></div>
+                <div class="flex-left m-l" id="body-info"></div>
+                <div class="flex-left m-l" id="suggestion"></div>
+               <div class="flex-left m-l" id="macro"></div>
+
+       
+           
+            <div class="notice-container p-l flex-center" id="notice-container">
+            </div>
+        </div>
+
+        <div class="step-counter p-l flex-center">
+            <div class="btn-container">
+                <div class="flex-center">
+                    Step : <div class=" flex-center large-text" id="step-counter">0</div>
+                    <div class="flex-center btn-container">
+                        <button  class="sub-primary-btn bg-grey border-grey m-m" id="startButton">Start</button>
+                        <button  id="stopButton"  disabled class="sub-primary-btn bg-red m-m border-red">Stop</button>
+                        <button id="resetButton" disabled class="sub-primary-btn bg-grey m-m border-grey">Reset</button>
+                    </div>
+            </div>
+            </div>
+             
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div class="flex-center bg-dark-grey" id="form-2">
+        <div class="heading-sub flex-center p-m">
+           <p>Body info</p> 
+        </div>
+        <div class="flex-center m-l">
+            <div class="bg-dark-grey form-container-1">
+                <form action="">
+                    <div class="flex-center m-m">
+                        <div class="round-icon bg-dark-red form-icon">
+                            <i class="fa-solid fa-weight-scale"></i>
+                        </div>
+                    </div>
+                     
+                    <div class="flex-center m-m">
+                        <label for="user-weight" class="m-m">Weight :</label>
+                        <input type="text" name="" id="user-weight">
+                    </div>
+                       
+                    <div class="flex-center m-m">
+                        <label for="user-height" class="m-m">Height(cm) :</label>
+                        <input type="text" name="" id="user-height">
+                    </div>
+
+                    <div class="flex-center m-m">
+                        <label for="user-steps" class="m-m">Steps goal:</label>
+                        <input type="text" name="" id="user-steps">
+                    </div>
+
+
+                    <div class="flex-center p-x m-s">
+                        <label for="user-activity" class="m-m">Physical activity :</label>
+                        <select name="" id="user-activity" class="p-m m-m">
+                            <option value="Normal">Normal</option>
+                            <option value="Moderate">Moderate</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+
+                    <div class="flex-center p-x m-s">
+                        <label for="user-goal">Fitness goal :</label>
+                        <select name="" id="user-goal" class="p-m m-m">
+                            <option value="Weight loss">Weight loss</option>
+                            <option value="Weight gain">Weight gain</option>
+                            <option value="General fitness">General fitness</option>
+                        </select>
+                    </div>
+
+                    <div class="flex-center">
+                        <button class="form-button flex-center bg-red" id="submit-2">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- workout form -->
+    <div class="flex-center p-l bg-dark-grey" id="hide">
+        <div class="workout-form grid p-l m-l">
+            <div class=" heading-sub flex-center p-x">Here you can plan your workout</div>
+
+            <form id="exerciseForm">
+                <div class="flex-center m-l"><label for="day">Select a day  </label></div>
+                <div class="flex-center">
+                    <select name="" id="day" class="m-m p-l">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                </div>
+                
+                <div class="flex-center m-l"><label for="exercisesCategory">Select workout type</label></div>
+                <div class="flex-center m-m"><select name="" id="exercisesCategory" class="p-l">
+                    <option value="Chest">Chest</option>
+                    <option value="Shoulders">Shoulders</option>
+                    <option value="Biceps">Biceps</option>
+                    <option value="Triceps">Tricpes</option>
+                    <option value="Back">Back</option>
+                    <option value="Legs">Legs</option>
+                    <option value="Abs">Abs</option>
+                    <option value="Cardio">Cardio</option>
+                </select></div>
+               <div class="flex-center m-l"><label for="numExercises">Number of Exercises</label></div> 
+               <div class="flex-center m-m"> <input type="number" id="numExercises" min="1" max="10"></div>
+
+               <div class="flex-center m-m"><button type="button" onclick="generateExerciseInputs()" class="form-button bg-grey border-grey">Next</button></div> 
+               <div class="flex-center m-m"><div id="exerciseInputs"></div></div> 
+               <div class="flex-center m-m"><button  class="form-button bg-red hidden-button" type="button" id="submit-3">Submit</button></div>
+
+        </div>
+    </div>
+   
+      <div class="flex-container-center bg-dark-grey">
+        <div class="heading-sub flex-center">Your Workouts</div>
+        
+        <div class="flex-center p-l m-l" id="workout-container">
+           
+        </div>
+        
+
+        <div class="flex-center bg-dark-grey">
+           <div class="heading-sub-s m-m p-l"> <h3>Add workouts</h3></div>
+            <div class="flex-left">
+                <button class="sub-primary-btn bg-grey border-grey m-m">Add workout</button>
+                <button class="sub-primary-btn bg-red border-red m-m">Delete all</button>
+            </div>
+           </div>
+           
+
+    </main>
+
+
+
+    <footer>     
+        <div>
+         <div class="main-container-center bg-dark-red footer" >
+           <div class="flex-left">
+             <div class="heading-sub  footer-heading "><h2 class="m-m">ActiveSync</h2> </div>
+           </div>
+   
+           <div class="grid-3">
+             <div class="grid">
+               <div class="flex-center p-l">
+                 <ul>
+                   <li class="m-l"><h5>Other Projects</h5></li>
+                   <li class="m-m">ToDo mate</li>
+                   <li class="m-m">Creator's blog</li>
+                   <li class="m-m">Food Hub</li>
+                   <li class="m-m">More to come</li>
+                 </ul>
+               </div>
+   
+             </div>
+   
+             <div class="grid">
+               <div class="flex-center p-l">
+                 <ul>
+                   <li class="m-l"><h5>About Us</h5></li>
+                   <li class="m-m">Our project</li>
+                   <li class="m-m">About Brand</li>
+                   <li class="m-m">About Creator</li>
+                   <li class="m-m">More to come</li>
+                 </ul>
+               </div>
+   
+             </div>
+     
+               <div class="grid">
+                 <div class="flex-center p-l">
+                   <ul>
+                     <li class="m-l"><h5>Articles & blogs</h5></li>
+                     <li class="m-m">Article 1</li>
+                     <li class="m-m">Article 2</li>
+                     <li class="m-m">Article 3</li>
+                     <li class="m-m">More to come</li>
+                   </ul>
+                 </div>
+   
+               </div>
+               </div>
+         
+       
+               <div class="grid m-m m-b">
+                
+                  </div>
+                  
+               </div>
+              
+            
+         </div>
+        </footer>
+        <div class="flex-right bg-dark-grey">
+         <div class="grid">                        
+         <div class="flex-left p-xl">
+           <h5>Follow us on :</h5> 
+           <div class="flex-center m-m">
+            <i class="fa-brands fa-facebook m-m footer-icon"></i>
+            <i class="fa-brands fa-instagram m-m footer-icon"></i>
+            <i class="fa-brands fa-twitter m-m footer-icon"></i>
+            <i class="fa-brands fa-linkedin m-m footer-icon"></i>
+         </div>
+        
+           <div class="flex-right p-xl">
+             &copy; 2023 ActiveSync
+           </div>
+   
+         </div>
+        </div>
+   
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
